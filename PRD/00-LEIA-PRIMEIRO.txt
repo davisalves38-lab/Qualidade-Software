@@ -1,0 +1,195 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                       ⚽ FOOT FANATICS — PRODUTO                          ║
+║                      Série A do Campeonato Brasileiro                     ║
+║                                                                            ║
+║                    📋 Documentação de Requisitos (PRD)                     ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+BEM-VINDO! 👋
+
+Esta pasta contém TODA a especificação do Foot Fanatics, incluindo:
+
+📚 7 DOCUMENTOS CRIADOS (1.565 linhas de documentação)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  README.md (5.8 KB)
+    → COMECE AQUI! Index completo com roteiro de leitura
+    → Para: Todos os perfis
+
+2️⃣  QUICK-START.md (1.2 KB)
+    → Resumo em 5 minutos para quem tem pressa
+    → Para: Stakeholders e novatos no projeto
+
+3️⃣  00-foot-fanatics-prd.md (22 KB) ⭐ DOCUMENTO PRINCIPAL
+    → PRD Completo: requisitos, análise de dados, epics, roadmap
+    → Seções: Objetivos, Personas, Análise de Dados, FR/NFR, Epics, Roadmap
+    → Para: Arquitetos, PMs, Desenvolvedores
+
+4️⃣  01-persona-admin.md (4.5 KB)
+    → Administrador: Jornada, permissões, funcionalidades, necessidades
+    → Acesso: Sistema inteiro
+    → Para: Devs que trabalham com admin panel
+
+5️⃣  02-persona-investidor.md (5.6 KB)
+    → Investidor: Análise, comparação, indicadores de performance
+    → Acesso: Todos os clubes
+    → Para: Devs que trabalham com dashboard de análise
+
+6️⃣  03-persona-torcedor.md (7.1 KB)
+    → Torcedor: Acompanhamento emocional, clube único, visualizações
+    → Acesso: Apenas 1 clube escolhido
+    → Para: Devs que trabalham com fan experience
+
+7️⃣  ARCHITECTURE-OVERVIEW.md (11.6 KB)
+    → Visão arquitetural completa com diagramas visuais
+    → Matriz de permissões, banco de dados centralizado, roadmap
+    → Para: Arquitetos, Tech Leads, Designers
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 ROTEIRO DE LEITURA POR PERFIL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👔 ARQUITETO / TECH LEAD
+  1. Leia: QUICK-START.md (5 min)
+  2. Leia: ARCHITECTURE-OVERVIEW.md (15 min)
+  3. Leia: 00-foot-fanatics-prd.md — Seções 3-7 (30 min)
+  4. Comece: Design técnico e arquitetura
+
+👨‍💻 DESENVOLVEDOR
+  1. Leia: README.md (5 min)
+  2. Leia: Persona correspondente (10 min)
+     - Admin? Leia 01-persona-admin.md
+     - Investidor? Leia 02-persona-investidor.md
+     - Torcedor? Leia 03-persona-torcedor.md
+  3. Leia: 00-foot-fanatics-prd.md — Requisitos Funcionais (20 min)
+  4. Comece: Story do Epic 1
+
+🧪 QA / TESTER
+  1. Leia: Todas as 3 personas (30 min)
+  2. Leia: 00-foot-fanatics-prd.md — Seções 4-5 (20 min)
+  3. Prepare: Plano de testes baseado em personas
+
+🎨 UX / DESIGN
+  1. Leia: ARCHITECTURE-OVERVIEW.md (20 min)
+  2. Leia: Todas as 3 personas com ênfase em "Jornada do Usuário" (30 min)
+  3. Leia: 00-foot-fanatics-prd.md — Seção 3 (UI Goals) (10 min)
+  4. Comece: Wireframes e design system
+
+👥 STAKEHOLDER / INVESTIDOR
+  1. Leia: QUICK-START.md (5 min)
+  2. Leia: 00-foot-fanatics-prd.md — Seções 1, 8 (Objetivos, Métricas) (10 min)
+  3. Leia: ARCHITECTURE-OVERVIEW.md — Roadmap (5 min)
+
+📊 PROJECT MANAGER (PM)
+  1. Leia: README.md (5 min)
+  2. Leia: Todas as personas e PRD completo (1 hora)
+  3. Valide: Decisões críticas em aberto (PRD Seção 7)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ DECISÕES CRÍTICAS EM ABERTO (DEVEM SER VALIDADAS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔴 CRÍTICO:
+  1. Fonte de Dados: CBF API? ESPN? Sofascore? API proprietária?
+  2. Critério de "Melhor/Pior Jogador": Automático (estatística) vs Manual?
+     Período: Última rodada? Últimas 5 rodadas? Temporada inteira?
+
+🟠 ALTO:
+  3. Protocolo de Autenticação: OAuth? Custom? Email?
+  4. Escopo de Login/Registro: Está no MVP?
+
+🟡 MÉDIO:
+  5. Responsividade: Mobile-first ou Web-first?
+  6. Histórico: Múltiplas temporadas suportadas?
+
+→ Consulte: 00-foot-fanatics-prd.md Seção 7 para mais detalhes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📈 RESUMO DO PRODUTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+O QUE É?
+  Site de futebol que centraliza dados dos 20 clubes da Série A do Brasileirão
+
+PARA QUEM?
+  • ADMIN: Gerencia todo o sistema
+  • INVESTIDOR: Analisa e compara performance dos clubes
+  • TORCEDOR: Acompanha seu time favorito
+
+DADOS PRINCIPAIS (POR CLUBE)
+  ✓ Posição na tabela
+  ✓ Vitórias e derrotas
+  ✓ Saldo de gols
+  ✓ Melhor jogador do momento
+  ✓ Pior jogador do momento
+  → Atualização: Semanal (máximo 24h após rodada)
+
+MVP INCLUI
+  ✓ 3 Dashboards distintos (Admin, Investidor, Torcedor)
+  ✓ Permissões por persona
+  ✓ CRUD de dados
+  ✓ Sincronização semanal
+
+FASE 2 (T+3 MESES)
+  📋 Histórico de temporadas
+  📋 Comparação avançada
+  📋 Exportação de relatórios
+  📋 Notificações em tempo real
+  📋 Compartilhamento em redes sociais
+
+FASE 3 (T+6 MESES)
+  🚀 Community de torcedores
+  🚀 Análises estatísticas avançadas
+  🚀 Suporte para Série B
+  🚀 API pública
+  🚀 Fantasy Football
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PRÓXIMOS PASSOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. LEIA:
+   → README.md (index completo)
+   → QUICK-START.md (resumo 5 min)
+
+2. VALIDE:
+   → Decisões críticas com stakeholders (Seção 7 do PRD)
+   → Fontes de dados disponíveis
+   → Critério de rankings de jogadores
+
+3. APRESENTE:
+   → Personas e requisitos com @Architect
+   → UI/UX com @UX-Design-Expert
+   → Plano de desenvolvimento com time
+
+4. DESENVOLVA:
+   → Epic 1: Foundation & Infrastructure (primeira)
+   → Seguindo estrutura definida no PRD
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 CONTATO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Responsável: Morgan (PM)
+Data de Criação: Outubro 5, 2026
+Status: Draft — Aguardando Validação
+
+Dúvidas ou ajustes?
+  → Abra issue no repositório
+  → Contacte @pm-agent
+  → Comente diretamente nos documentos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ BEM-VINDO AO FOOT FANATICS! ⚽🚀
+
+Comece lendo: README.md ou QUICK-START.md
+
+╚════════════════════════════════════════════════════════════════════════════╝
